@@ -11,13 +11,13 @@ If you haven't already installed Docker Desktop, you can download it from this l
 
 
 ## 2. Open Terminal
-Open the terminal application on your Mac.
+Open the terminal application on your Mac. The icon should have a black screen with the >_ symbols present.
 
 ## 3. Pull the PiHole Image via Docker
 In the Terminal, use the following command to install the piehole Docker image:
 
 
-docker pull pihole/pihole
+sudo docker pull pihole/pihole
 Downloads the latest piehole image to your docker installation. 
 
 ## 4. Run Pi-hole Container

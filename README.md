@@ -51,34 +51,34 @@ Once you've logged in, the interface should look like this:
 This is what a docker-compose.yml block would look like for Pi-hole:
 
 
-version: '3'
+    version: '3'
 
-services:
+    services:
   
-    piehole:
+      piehole:
   
-      container_name: pihole
+        container_name: pihole
     
-      image: pihole/pihole:latest
+        image: pihole/pihole:latest
     
-      ports:
-      - "53:53/tcp"
-      - "53:53/udp"
-      - "67:67/udp"
-      - "80:80"
-      - "443:443"
+        ports:
+        - "53:53/tcp"
+        - "53:53/udp"
+        - "67:67/udp"
+        - "80:80"
+        - "443:443"
     
-      environment:
-      TZ: 'Your/Timezone' # Pick your timezone
-      WEBPASSWORD: 'Passwd' # Set your password
+        environment:
+        TZ: 'Your/Timezone' # Pick your timezone
+        WEBPASSWORD: 'Passwd' # Set your password
     
-      volumes:
-      - './etc-pihole/:/etc/pihole/'
-      - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+        volumes:
+        - './etc-pihole/:/etc/pihole/'
+        - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     
-      cap_add:
-      - NET_ADMIN
+        cap_add:
+        - NET_ADMIN
    
-      restart: unless-stopped
+        restart: unless-stopped
 
 

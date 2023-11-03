@@ -21,8 +21,8 @@ sudo docker pull pihole/pihole
 
 Downloads the latest piehole image to your docker installation. 
 
-## 4. Run Pi-hole Container
-Now, you can create and run a Pi-hole container using the following command. Replace your_password with your desired web interface password:
+## 4. Create and Run Pi-hole Container
+Now, you can create and run a Pi-hole container using the following commands. Replace user_password with your own password:
 
 
 docker run -d \

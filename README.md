@@ -55,7 +55,7 @@ version: '3'
 
 services:
   
-  piehole:
+    piehole:
   
     container_name: pihole
     

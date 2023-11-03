@@ -4,8 +4,8 @@
 
 Before you begin, make sure you have the required items:
 
---Docker's desktop application installed on your Mac. 
---An internet connection.
+- Docker's desktop application installed on your Mac. 
+- An internet connection.
 Here are the installation steps you must follow:
 ## 1. Install the Docker Desktop Application
 

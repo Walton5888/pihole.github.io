@@ -31,7 +31,7 @@ Downloads the latest piehole image to your docker installation.
 Now, you can create and run a Pi-hole container using the following command in your terminal. Replace user_password with your own password.
 
 
-sudo docker run -d --name pihole -e ServerIP=your_host_ip_address -e TZ="America/California" -e WEBPASSWORD=user_password -p 53:53/tcp -p 53:53/udp -p 67:67/udp -p 80:80  -p 443:443  -v "$(pwd)/pihole/etc-pihole/:/etc/pihole/"  -v "$(pwd)/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/"  --dns=127.0.0.1 --dns=1.1.1.1 --restart=unless-stopped pihole/pihole
+sudo docker run -d --name pihole -e ServerIP=your_host_ip_address -e TZ="Your/Timezone" -e WEBPASSWORD=user_password -p 53:53/tcp -p 53:53/udp -p 67:67/udp -p 80:80  -p 443:443  -v "$(pwd)/pihole/etc-pihole/:/etc/pihole/"  -v "$(pwd)/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/"  --dns=127.0.0.1 --dns=1.1.1.1 --restart=unless-stopped pihole/pihole
 
 This creates a piehole container with specific configurations.
 
@@ -46,4 +46,30 @@ Login with the credentials you set when you built the container.
 
 Once you've logged in, the interface should look like this:
 <img width="1720" alt="Screenshot 2023-11-02 at 6 47 27 PM" src="https://github.com/Walton5888/pihole.github.io/assets/110494531/e44d2f11-5726-4cbe-9ac8-9d43935ae705">
+
+## 7. Docker-compose.yml block (method not used)
+This is what a docker-compose.yml block would look like for Pi-hole:
+
+version: '3'
+
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80"
+      - "443:443"
+    environment:
+      TZ: 'Your/Timezone' # Set your timezone
+      WEBPASSWORD: 'Passwd' # Set your password
+    volumes:
+      - './etc-pihole/:/etc/pihole/'
+      - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+
 

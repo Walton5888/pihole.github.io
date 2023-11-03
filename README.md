@@ -47,7 +47,7 @@ Login with the credentials you set when you built the container.
 Once you've logged in, the interface should look like this:
 <img width="1720" alt="Screenshot 2023-11-02 at 6 47 27 PM" src="https://github.com/Walton5888/pihole.github.io/assets/110494531/e44d2f11-5726-4cbe-9ac8-9d43935ae705">
 
-## 7. Docker-compose.yml block (method not used)
+## 7. Docker-compose.yml block (Container-construction method that was not used)
 This is what a docker-compose.yml block would look like for Pi-hole:
 
 
@@ -69,7 +69,7 @@ This is what a docker-compose.yml block would look like for Pi-hole:
           - "443:443"
     
         environment:
-        TZ: 'Your/Timezone' # Pick your timezone
+        TZ: 'User/Timezone' # Pick your timezone
         WEBPASSWORD: 'Passwd' # Set your password
     
         volumes:
@@ -77,7 +77,7 @@ This is what a docker-compose.yml block would look like for Pi-hole:
           - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     
         cap_add:
-          - NET_ADMIN
+          - NET_ADMIN #sets admin privileges
    
         restart: unless-stopped
 

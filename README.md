@@ -50,12 +50,13 @@ Once you've logged in, the interface should look like this:
 ## 7. Docker-compose.yml block (method not used)
 This is what a docker-compose.yml block would look like for Pi-hole:
 
+
 version: '3'
 
 services:
   
-  pihole:
-    
+  piehole:
+  
     container_name: pihole
     
     image: pihole/pihole:latest
@@ -68,7 +69,7 @@ services:
       - "443:443"
     
     environment:
-      TZ: 'Your/Timezone' # Set your timezone
+      TZ: 'Your/Timezone' # Pick your timezone
       WEBPASSWORD: 'Passwd' # Set your password
     
     volumes:

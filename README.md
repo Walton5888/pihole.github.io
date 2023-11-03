@@ -13,7 +13,10 @@ If you haven't already installed Docker Desktop, you can download it from this l
 ## 2. Open Terminal
 Open the terminal application on your Mac. The icon should have a black screen with the >_ symbols present.
 
-## 3. Pull the PiHole Image via Docker
+## 3. Open your Docker Application
+Go to your Finder application, select Applications on the left-side, and look for a whale-like icon that is blue. Click it to open. 
+
+## 4. Pull the PiHole Image via Docker
 In the Terminal, use the following command to install the piehole Docker image:
 
 
@@ -21,11 +24,11 @@ sudo docker pull pihole/pihole
 
 Downloads the latest piehole image to your docker installation. 
 
-## 4. Create and Run Pi-hole Container
+## 5. Create and Run Pi-hole Container
 Now, you can create and run a Pi-hole container using the following commands. Replace user_password with your own password:
 
 
-docker run -d \
+sudo docker run -d \
     --name pihole \
     -e ServerIP=your_host_ip_address \
     -e TZ="America/California" \
@@ -42,7 +45,7 @@ docker run -d \
 
 This creates a piehole container with specific configurations.
 
-## 5. Access Pi-hole Web Interface:
+## 6. Access Pi-hole Web Interface:
 Once you have confirmed your container is running, type in the following url:
 
 http://your_host_ip_address/admin.

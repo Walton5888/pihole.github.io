@@ -2,13 +2,13 @@
 Prerequisites
 Before you begin, make sure you have the required items:
 
-Docker's desktop application installed on your Mac. If you do not have it, it can be found here: https://www.docker.com/products/docker-desktop/
+Docker's desktop application installed on your Mac. 
 An internet connection.
 Installation Steps
 ## 1. Install the Docker Desktop Application
-If you haven't already installed Docker Desktop, you can download it from the official Docker website and follow the installation instructions:
+If you haven't already installed Docker Desktop, you can download it from this link: https://www.docker.com/products/docker-desktop/
 
-Docker Desktop for Mac
+
 ## 2. Open Terminal
 Open the terminal application on your Mac.
 
@@ -44,5 +44,7 @@ This creates a piehole container with specific configurations.
 Once you have confirmed your container is running, type in the following url:
 
 http://your_host_ip_address/admin.
+
 Replace "your_host_ip_address" with your Mac's IP address.
+
 Login with the credentials you set when you built the container. 

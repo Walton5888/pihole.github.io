@@ -18,6 +18,7 @@ In the Terminal, use the following command to install the piehole Docker image:
 
 
 sudo docker pull pihole/pihole
+
 Downloads the latest piehole image to your docker installation. 
 
 ## 4. Run Pi-hole Container

@@ -43,3 +43,7 @@ http://your_host_ip_address/admin.
 Replace "your_host_ip_address" with your Mac's IP address.
 
 Login with the credentials you set when you built the container. 
+
+Once you've logged in, the interface should look like this:
+<img width="1720" alt="Screenshot 2023-11-02 at 6 47 27 PM" src="https://github.com/Walton5888/pihole.github.io/assets/110494531/e44d2f11-5726-4cbe-9ac8-9d43935ae705">
+

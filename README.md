@@ -62,22 +62,22 @@ This is what a docker-compose.yml block would look like for Pi-hole:
         image: pihole/pihole:latest
     
         ports:
-        - "53:53/tcp"
-        - "53:53/udp"
-        - "67:67/udp"
-        - "80:80"
-        - "443:443"
+          - "53:53/tcp"
+          - "53:53/udp"
+          - "67:67/udp"
+          - "80:80"
+          - "443:443"
     
         environment:
         TZ: 'Your/Timezone' # Pick your timezone
         WEBPASSWORD: 'Passwd' # Set your password
     
         volumes:
-        - './etc-pihole/:/etc/pihole/'
-        - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+          - './etc-pihole/:/etc/pihole/'
+          - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     
         cap_add:
-        - NET_ADMIN
+          - NET_ADMIN
    
         restart: unless-stopped
 

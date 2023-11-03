@@ -1,5 +1,5 @@
 ## Installing Pi-hole on Mac using Docker
-Prerequisites
+## Prerequisites
 Before you begin, make sure you have the required items:
 
 Docker's desktop application installed on your Mac. 

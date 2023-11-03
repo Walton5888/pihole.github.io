@@ -57,28 +57,28 @@ services:
   
     piehole:
   
-    container_name: pihole
+      container_name: pihole
     
-    image: pihole/pihole:latest
+      image: pihole/pihole:latest
     
-    ports:
+      ports:
       - "53:53/tcp"
       - "53:53/udp"
       - "67:67/udp"
       - "80:80"
       - "443:443"
     
-    environment:
+      environment:
       TZ: 'Your/Timezone' # Pick your timezone
       WEBPASSWORD: 'Passwd' # Set your password
     
-    volumes:
+      volumes:
       - './etc-pihole/:/etc/pihole/'
       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     
-    cap_add:
+      cap_add:
       - NET_ADMIN
    
-    restart: unless-stopped
+      restart: unless-stopped
 
 

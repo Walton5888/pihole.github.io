@@ -13,7 +13,7 @@ Before you begin, make sure you have the required items:
 If you haven't already installed Docker's desktop application, you can download it from this link: https://www.docker.com/products/docker-desktop/
 
 
-## 2. Open Terminal
+## 2. Open your Terminal
 Open the terminal application on your Mac. The icon should have a black screen with the >_ symbols present.
 
 ## 3. Open your Docker Application

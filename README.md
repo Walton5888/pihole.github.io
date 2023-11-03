@@ -1,25 +1,25 @@
-Installing Pi-hole on Mac using Docker
+##Installing Pi-hole on Mac using Docker
 Prerequisites
 Before you begin, make sure you have the following prerequisites:
 
 Docker Desktop installed on your Mac.
 A working internet connection.
 Installation Steps
-1. Install Docker Desktop
+##1. Install Docker Desktop
 If you haven't already installed Docker Desktop, you can download it from the official Docker website and follow the installation instructions:
 
 Docker Desktop for Mac
-2. Open Terminal
+##2. Open Terminal
 Open the terminal application on your Mac.
 
-3. Pull the PiHole Image via Docker
+##3. Pull the PiHole Image via Docker
 In the Terminal, use the following command to pull the Pi-hole Docker image from Docker Hub:
 
 
 docker pull pihole/pihole
 Downloads the latest piehole image to your docker installation. 
 
-4. Run Pi-hole Container
+##4. Run Pi-hole Container
 Now, you can create and run a Pi-hole container using the following command. Replace your_password with your desired web interface password:
 
 bash
@@ -40,6 +40,8 @@ docker run -d \
     pihole/pihole
 This creates a container with specific configurations.
 
-5. Access Pi-hole Web Interface:
+##5. Access Pi-hole Web Interface:
 Once you have confirmed your container is running, type in the following url:
+
 http://your_host_ip_address/admin.
+Replace "your_host_ip_address" with your Mac's IP address.

@@ -1,4 +1,4 @@
-## Installing Pi-hole on Mac using Docker
+## Installing Pi-hole Web Interface on Mac Using Docker containers
 
 ## Prerequisites
 

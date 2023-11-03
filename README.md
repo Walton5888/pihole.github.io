@@ -36,7 +36,7 @@ sudo docker run -d --name pihole -e ServerIP=your_host_ip_address -e TZ="Your/Ti
 This creates a piehole container with specific configurations.
 
 ## 6. Access Pi-hole Web Interface:
-Once you have confirmed your container is running, type in the following url:
+Once you have confirmed your container is running, type in the following url in your web browser:
 
 http://your_host_ip_address/admin.
 
